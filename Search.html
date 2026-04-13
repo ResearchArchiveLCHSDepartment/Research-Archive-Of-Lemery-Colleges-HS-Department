@@ -301,6 +301,8 @@ font-size:18px;
 <p>Email: noahaiden55@gmail.com</p>
 </div>
 
+<button onclick="logout()">Log out</button>
+
 </div>
 </div>
 
@@ -323,6 +325,10 @@ function searchResearch(){
 const keyword=encodeURIComponent(document.getElementById("keywordInput").value.trim());
 const year=encodeURIComponent(document.getElementById("yearSelect").value);
 window.location.href=`Researches.html?keyword=${keyword}&year=${year}`;
+}
+
+function logout(){
+window.location.href="index.html";
 }
 
 const slidePanel=document.getElementById('slidePanel');
